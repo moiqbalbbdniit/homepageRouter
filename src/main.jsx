@@ -6,6 +6,7 @@ import About from './about/About.jsx'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Contact from './contact/Contact.jsx'
+import Order from './order/Order.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
       {
         path:"contact",
         element:<Contact/>
-      }
+      },
+    {
+        path:"order",
+        element: <Order/>
+    }
     ]
   }
 ])
